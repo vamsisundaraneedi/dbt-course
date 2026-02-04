@@ -1,0 +1,21 @@
+airbnb:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: ep-cool-frost-aalkbae7-pooler.westus3.azure.neon.tech
+      user: neondb_owner
+      password: npg_2oPZN7RTaJBD
+      port: 5432
+      dbname: neondb # or database instead of dbname
+      schema: new_dw
+      threads: 1
+      keepalives_idle: 0 # default 0, indicating the system default. See below
+      connect_timeout: 10 # default 10 seconds
+      retries: 1  # default 1 retry on error/timeout when opening connections
+      # search_path: [optional, override the default postgres search_path]
+      role: neondb_owner
+      # sslmode: [optional, set the sslmode used to connect to the database]
+      # sslcert: [optional, set the sslcert to control the certifcate file location]
+      # sslkey: [optional, set the sslkey to control the location of the private key]
+      # sslrootcert: [optional, set the sslrootcert config value to a new file path in order to customize the file location that contain root certificates]

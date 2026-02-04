@@ -1,0 +1,10 @@
+SELECT
+    customer_id
+    ,customer_nk
+    ,first_name
+    ,last_name
+    ,email
+    ,state
+    ,segment
+FROM
+    demo_dw.dim_customer

@@ -1,0 +1,10 @@
+SELECT
+    product_id
+    ,product_nk
+    ,product_name
+    ,category
+    ,brand
+    ,base_price
+    ,is_active
+FROM
+    demo_dw.dim_product
