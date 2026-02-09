@@ -7,4 +7,4 @@ SELECT
     ,base_price
     ,is_active
 FROM
-    demo_dw.dim_product
+    {{ source('airbnb', 'product') }}

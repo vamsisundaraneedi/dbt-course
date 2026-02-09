@@ -7,4 +7,4 @@ SELECT
     ,state
     ,segment
 FROM
-    demo_dw.dim_customer
+    {{ source('airbnb', 'customer') }}

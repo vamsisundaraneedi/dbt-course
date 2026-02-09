@@ -1,3 +1,8 @@
+{{
+    config(
+        materialized = 'view'
+    )
+}}
 select
     Customer_ID
     ,Customer_NK

@@ -1,0 +1,8 @@
+snapshots:
+  - name: src_cdc_customer
+    relation: source('airbnb', 'customer')
+    config:
+      unique_key: customer_id
+      updated_at: created_at
+      strategy: timestamp
+      hard_deletes: invalidate
